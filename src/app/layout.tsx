@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 	title: "Octopus-hair",
 	description: "Najlepszy zakład fryzjerski w Piotrkowie-Tribunalskoje",
 	icons: {
-		icon: "/favicon.ico",
+		icon: "/favicon.png",
 	},
 };
 
