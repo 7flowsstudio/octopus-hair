@@ -1,0 +1,62 @@
+.heroImageContainer {
+   position: relative;
+   width: 100dvw;
+   height: 227px;
+   overflow: hidden;
+}
+
+.heroImage {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: 50% 35%;
+   transform: scaleX(-1);
+}
+
+.heroImageContainer::after {
+   content: "";
+   position: absolute;
+   inset: 0;
+   background: #00000080;
+}
+
+.heroContent {
+   background: url('/images/hero/background.svg');
+   background-repeat: no-repeat;
+   background-color: var(--landing-background);
+   background-position: center center;
+   height: 350px;
+   width: 281;
+   height: 320;
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+   padding: 16px 16px 40px 16px;
+}
+
+.heroTitle {
+   font-family: var(--font-family);
+   font-weight: 600;
+   font-size: 32px;
+   text-align: center;
+   color: var(--white);
+}
+
+.heroDescription {
+   font-family: var(--font-family);
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 24px;
+   text-align: center;
+   color: var(--white);
+}
+
+.heroButton {
+   background: var(--orange);
+   border-radius: 8px;
+   padding: 10px 20.5px;
+   color: var(--white);
+   text-decoration: none;
+   font-size: 20px;
+   text-align: center;
+}
