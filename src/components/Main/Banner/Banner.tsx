@@ -4,7 +4,7 @@ import s from './Banner.module.css'
 export const Banner = () => {
     return (
         <section className={`container ${s.banner}`}>
-            <h2 className={s.title}>
+            <h2 className="title">
                 CO DZIESIĄTE STRZYŻENIE GRATIS!
             </h2>
             <Image
