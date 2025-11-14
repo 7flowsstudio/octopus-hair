@@ -28,14 +28,13 @@
    background: url('/images/hero/background.svg');
    background-repeat: no-repeat;
    background-color: var(--landing-background);
-   background-position: center center;
-   height: 350px;
-   width: 281;
-   height: 320;
+   background-position: center;
+   background-size: contain;
    display: flex;
    flex-direction: column;
    gap: 12px;
-   padding: 16px 16px 40px 16px;
+   padding: 16px;
+   padding-bottom: 54px;
 }
 
 .heroTitle {
