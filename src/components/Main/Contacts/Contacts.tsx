@@ -1,10 +1,19 @@
+'use client'
+
 import Image from "next/image";
 import s from './Contacts.module.css'
+import {useMediaPoints} from "@/hooks/useMediaPoints";
 
-export const Contacts = () => {
+type ContactsProps = {
+    className?: string;
+};
+
+export const Contacts = ({ className }: ContactsProps) => {
+    const {isMobile} = useMediaPoints();
+
     return (
-        <section className="container">
-            <h2 className="title">Kontakt</h2>
+        <section className={className}>
+            {isMobile && <h2 className="title">Kontakt</h2>}
             <div className={s.contacts_wrapper}>
                 <ul className={s.contact_list}>
                     <li>
