@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "./variables.css";
 import Header from "@/components/Header/Header";
-import Footer from "@/components/Footer/Footer";
 
 export const metadata: Metadata = {
 	title: "Octopus-hair",
@@ -22,7 +21,6 @@ export default function RootLayout({
 			<body>
 				<Header />
 				<main>{children}</main>
-				<Footer />
 			</body>
 		</html>
 	);

@@ -6,6 +6,11 @@
 
     padding-top: 48px;
     padding-bottom: 51px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 144px;
+        padding-bottom: 144px;
+    }
 }
 
 .cosmetics_desc {
